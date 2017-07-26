@@ -12,3 +12,5 @@
 # Visual Studio Generated Files #
 #################################
 *.db
+*.ipch
+*.opendb
