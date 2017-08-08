@@ -31,6 +31,9 @@ private:
 	float OpenAngle = 90.0f;
 
 	UPROPERTY(EditAnywhere)
+	float CloseAngle = 0.0f;
+
+	UPROPERTY(EditAnywhere)
 	float CloseDoorDelay = 1.f;
 	
 	UPROPERTY(EditAnywhere)
