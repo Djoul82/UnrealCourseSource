@@ -23,7 +23,16 @@ private:
 	UPhysicsHandleComponent* PhysicsHandle = nullptr;
 	UInputComponent* InputComponent = nullptr;
 
+	//Actions
 	void Grab();
+	void Release();
+
+	//Initialization functions
+	void FindPhysicsHandleComponent();
+	void SetupInputComponent();
+
+	//Return hit for first physics body in reach
+	const FHitResult GetFirstPhysicsBodyInReach();
 
 protected:
 	// Called when the game starts
