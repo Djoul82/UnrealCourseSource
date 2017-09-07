@@ -18,6 +18,7 @@ public:
 	// Called every frame
 	virtual void TickComponent(float DeltaTime, ELevelTick TickType, FActorComponentTickFunction* ThisTickFunction) override;
 
+
 private:
 	float Reach = 100.f;
 	UPhysicsHandleComponent* PhysicsHandle = nullptr;
@@ -33,6 +34,14 @@ private:
 
 	//Return hit for first physics body in reach
 	const FHitResult GetFirstPhysicsBodyInReach();
+
+	//Returns current start of reach line
+	FVector GetReachLineStart();
+
+	//Returns current end of reach line
+	FVector GetReachLineEnd();
+
+
 
 protected:
 	// Called when the game starts
